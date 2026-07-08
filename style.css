@@ -1,0 +1,468 @@
+/* ======================
+   GENERAL
+====================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background: #fbf7ea;
+    color:#222222;
+    line-height:1.6;
+}
+
+/* ======================
+   HEADER
+====================== */
+
+header{
+    width:90%;
+    margin:20px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid #d8d8d8;
+    background:#fffdf8;
+}
+
+.logo-box{
+    width:220px;
+    text-align:center;
+    border-right:1px solid #d8d8d8;
+    padding:15px;
+}
+
+.logo-box img{
+    width:55px;
+    height:55px;
+}
+
+.logo-box p{
+    margin-top:10px;
+    font-size:15px;
+}
+
+nav{
+    padding-right:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#5b2c83;
+    margin:0 12px;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#b86c29;
+}
+
+/* ======================
+   HERO
+====================== */
+
+.hero{
+    width:80%;
+    margin:50px auto;
+    text-align:center;
+}
+
+.small-title{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#b66a2d;
+    margin-bottom:25px;
+}
+
+.hero p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.hero-links{
+    margin:35px 0;
+}
+
+.hero-links a{
+    margin:0 20px;
+    color:#5b2c83;
+}
+
+.hero-links a:hover{
+    color:#b66a2d;
+}
+
+/* ======================
+   STATS
+====================== */
+
+.stats{
+    width:70%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.box{
+    border:1px solid #d8d8d8;
+    padding:40px;
+    background:white;
+}
+
+.box h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.box p{
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* ======================
+   HR
+====================== */
+
+hr{
+    width:85%;
+    margin:40px auto;
+    border:0;
+    border-top:1px solid #d7d7d7;
+}
+
+/* ======================
+   SECTION TITLE
+====================== */
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h3{
+    font-weight:normal;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.section-title h1{
+    color:#b66a2d;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.section-title p{
+    width:80%;
+    margin:auto;
+}
+/* ======================
+   ABOUT SECTION
+====================== */
+
+#about{
+    width:90%;
+    margin:50px auto;
+}
+
+.about-container{
+    display:flex;
+    border:1px solid #d9d9d9;
+    background:#fffdf8;
+}
+
+.left-icons{
+    width:180px;
+    border-right:1px solid #d9d9d9;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    font-size:45px;
+    color:#45b6ff;
+}
+
+.right-content{
+    flex:1;
+    padding:50px;
+    text-align:center;
+}
+
+.right-content h2{
+    color:#b66a2d;
+    font-size:45px;
+    margin-bottom:30px;
+}
+
+.right-content p{
+    font-size:18px;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+/* ======================
+   TOPICS
+====================== */
+
+.topics{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    margin-top:40px;
+}
+
+.topics div{
+    border:1px solid #d9d9d9;
+    padding:20px;
+    background:white;
+    transition:.3s;
+}
+
+.topics div:hover{
+    background:#b66a2d;
+    color:white;
+}
+
+/* ======================
+   PROJECTS
+====================== */
+
+#projects{
+    width:92%;
+    margin:auto;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.project-card{
+    background:white;
+    border:1px solid #ddd;
+    padding:30px;
+    text-align:center;
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.project-card .icon{
+    font-size:45px;
+    margin-bottom:25px;
+}
+
+.project-card hr{
+    width:80%;
+    margin:20px auto;
+}
+
+.project-card h3{
+    margin:15px 0;
+}
+
+.project-card h4{
+    color:#222;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.project-card p{
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.project-card a{
+    color:#4b2ca1;
+    font-weight:bold;
+}
+
+.project-card a:hover{
+    color:#b66a2d;
+}
+
+/* ======================
+   CTA
+====================== */
+
+.cta{
+    width:80%;
+    margin:70px auto;
+    text-align:center;
+}
+
+.cta h1{
+    color:#b66a2d;
+    font-size:50px;
+    margin-bottom:25px;
+}
+
+.cta p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.cta a{
+    color:#6b2fb8;
+    font-size:18px;
+}
+
+.cta a:hover{
+    color:#b66a2d;
+}
+
+/* ======================
+   WEBSITE
+====================== */
+
+.website-box{
+    width:75%;
+    margin:40px auto;
+    border:1px solid #d9d9d9;
+    background:white;
+    text-align:center;
+    padding:50px;
+}
+
+.website-box img{
+    width:70px;
+    margin-bottom:20px;
+}
+
+.website-box h2{
+    color:#b66a2d;
+    margin-bottom:20px;
+}
+
+.website-box p{
+    margin-bottom:20px;
+    font-style:italic;
+}
+
+.website-box a{
+    color:#5b2c83;
+    font-weight:bold;
+}
+
+/* ======================
+   MAP
+====================== */
+
+.map{
+    width:70%;
+    margin:40px auto;
+}
+
+.map iframe{
+    width:100%;
+    border:0;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media(max-width:992px){
+
+header{
+    flex-direction:column;
+}
+
+.logo-box{
+    width:100%;
+    border-right:none;
+    border-bottom:1px solid #ddd;
+}
+
+nav{
+    padding:20px;
+}
+
+.about-container{
+    flex-direction:column;
+}
+
+.left-icons{
+    width:100%;
+    border-right:none;
+    border-bottom:1px solid #ddd;
+    flex-direction:row;
+    padding:30px;
+}
+
+.stats{
+    width:100%;
+    grid-template-columns:1fr;
+}
+
+.topics{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.project-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.map{
+    width:95%;
+}
+
+.website-box{
+    width:95%;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:35px;
+}
+
+.section-title h1{
+    font-size:32px;
+}
+
+.right-content h2{
+    font-size:30px;
+}
+
+.project-container{
+    grid-template-columns:1fr;
+}
+
+.topics{
+    grid-template-columns:1fr;
+}
+
+.hero-links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.cta h1{
+    font-size:34px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
